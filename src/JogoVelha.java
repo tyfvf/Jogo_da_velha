@@ -148,9 +148,7 @@ public class JogoVelha implements ActionListener{
         if((buttons[2].getText()=="O")&& (buttons[4].getText()=="O") && (buttons[6].getText()=="O")){
             oWins(2,4,6);
         }
-        else if((buttons[0].getText()=="X" || buttons[0].getText()=="O")&&(buttons[1].getText()=="X" || buttons[1].getText()=="O")&&(buttons[2].getText()=="X" || buttons[2].getText()=="O")&&(buttons[3].getText()=="X" || buttons[3].getText()=="O")&&(buttons[4].getText()=="X" || buttons[4].getText()=="O")&&(buttons[5].getText()=="X" || buttons[5].getText()=="O")&&(buttons[6].getText()=="X" || buttons[6].getText()=="O")&&(buttons[7].getText()=="X" || buttons[7].getText()=="O")&&(buttons[8].getText()=="X" || buttons[8].getText()=="O")){
-            deuVelha();
-        }
+        
     }
     
     public void xWins(int a, int b, int c){
@@ -174,13 +172,6 @@ public class JogoVelha implements ActionListener{
         }
         textfield.setText("O wins");
         
-    }
-    
-    public void deuVelha(){
-        for(int i=0;i<9;i++){
-            buttons[i].setEnabled(false);
-        }
-        textfield.setText("Deu Velha");
     }
     
 }
